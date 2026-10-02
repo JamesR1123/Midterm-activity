@@ -1,0 +1,124 @@
+.transformation-section {
+    padding: 80px 0;
+}
+
+.transform-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 48px;
+    align-items: center;
+}
+
+.transform-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.transform-item {
+    padding: 18px 24px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+}
+
+.transform-item.active {
+    background: #fef9c3;
+    color: var(--text-primary);
+}
+
+.transform-item.active h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.transform-item.active p {
+    font-size: 0.8rem;
+    color: #854d0e;
+}
+
+.transform-card-display {
+    background: #ffffff;
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.floating-mail-icon, .floating-whatsapp-icon {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+}
+
+.floating-mail-icon {
+    top: -15px;
+    left: 40px;
+    background: #ffedd5;
+}
+
+.floating-whatsapp-icon {
+    bottom: -15px;
+    right: 40px;
+    background: #25d366;
+    color: #fff;
+}
+
+.chat-card-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat-user-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #f9fafb;
+    border-radius: var(--radius-sm);
+}
+
+.chat-user-row img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.chat-user-row h5 {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.chat-user-row p {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.time-badge {
+    margin-left: auto;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.chat-user-row.muted {
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .transform-grid { grid-template-columns: 1fr; }
+}
